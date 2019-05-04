@@ -1,6 +1,6 @@
 "# react-redux-3" 
 
-This is a continuation of [react-redux tutorial](https://www.valentinog.com/blog/react-redux-tutorial-beginners/) where now react-redux library has been added to show how you can [connect](https://github.com/reduxjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options) function to bind React to the store. Sort of like a helper to make the hookup simpler. 
+This is a continuation of [react-redux tutorial](https://www.valentinog.com/blog/react-redux-tutorial-beginners/) where now react-redux library has been added to show how you can use the [connect](https://github.com/reduxjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options) function to bind React to the store. Sort of like a helper to make the hookup simpler. 
 
 The central ideas that might take a minute to grasp are the arguments passed to the connect function: 
 - mapStateToProps function
