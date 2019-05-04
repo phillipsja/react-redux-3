@@ -6,20 +6,20 @@ The central ideas that might take a minute to grasp are the arguments passed to 
 - mapStateToProps function
 - mapDispatchToProps function
 
-This will allow a React component will have access to the exact part of the store it needs. 
+This will allow a React component access to the exact part of the store it needs. 
 
-Consider that in react-redux-2 how a function "addArticle" was defined in a reducer to add
+Consider how function "addArticle" in project react-redux-2,  was defined in a reducer to add
 an article to the redux store: 
 
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_ARTICLE:
-		  //this is what we want to do essentially, but state must be immutable
-      //state.articles.push(action.payload);
-			//return state;
-			//this is ok, but note that we could make it better? 
-			//return { ...state, articles: state.articles.concat(action.payload) };
-			//note the state hasn't been changed, what are we returning here? an object containing existing state and new articles list (or state entry)? 
+	//this is what we want to do essentially, but state must be immutable
+      	//state.articles.push(action.payload);
+	//return state;
+	//this is ok, but note that we could make it better? 
+	//return { ...state, articles: state.articles.concat(action.payload) };
+	//note the state hasn't been changed, what are we returning here? an object containing existing state and new articles list (or state entry)? 
 			return { ...state, articles: [...state.articles, action.payload] };
 
     default:
@@ -58,7 +58,7 @@ returns the connected component, List.
 
 In the second example, only the dispatch-ing
 of actions is connected, whereas the component keeps its own state. This is the weird
-part for me. The component has its own state, but it still dispatches changes to the "globa" 
+part for me. The component has its own state, but it still dispatches changes to the "global" 
 store. 
 
 ```javascript
